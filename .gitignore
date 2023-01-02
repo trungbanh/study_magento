@@ -78,3 +78,5 @@ atlassian*
 /lib/*
 /pub/*
 /setup/*
+
+/auth.json
