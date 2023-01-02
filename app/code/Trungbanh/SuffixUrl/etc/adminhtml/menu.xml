@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Trungbanh_SuffixUrl::helloworld" title="Hello World" module="Trungbanh_SuffixUrl" sortOrder="51" resource="Trungbanh_SuffixUrl::helloworld"/>
+        <add id="Trungbanh_SuffixUrl::post" title="Manage Posts" module="Trungbanh_SuffixUrl" sortOrder="10" action="Trungbanh_SuffixUrl/post" resource="Trungbanh_SuffixUrl::post" parent="Trungbanh_SuffixUrl::helloworld"/>
+        <add id="Trungbanh_SuffixUrl::hello_configuration" title="Configuration" module="Trungbanh_SuffixUrl" sortOrder="99" parent="Trungbanh_SuffixUrl::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="Trungbanh_SuffixUrl::helloworld_configuration"/>
+    </menu>
+</config>
