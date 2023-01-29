@@ -3,6 +3,8 @@
         <referenceContainer name="content">
            <block class="Trungbanh\SuffixUrl\Block\Adminhtml\Post\Index"  name="trungbanh.suffix.post"  
                     template="Trungbanh_SuffixUrl::post/index.phtml" />
+
+            <uiComponent name="employee_form"/>
         </referenceContainer>
     </body>
 </page>
