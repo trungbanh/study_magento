@@ -2,7 +2,7 @@
 
 namespace Trungbanh\SuffixUrl\Controller\Index;
 
-class Test extends \Magento\Framework\App\Action\Action
+class Index extends \Magento\Framework\App\Action\Action
 {
   protected $_pageFactory;
 
@@ -16,7 +16,9 @@ class Test extends \Magento\Framework\App\Action\Action
 
   public function execute()
   {
-    echo "Hello World";
-    exit;
+    $resultPage = $this->_pageFactory->create();
+    $resultPage->getConfig()->getTitle()->set(__('Test'));
+    $resultPage->addHandle('suffix_index_test');
+    return $resultPage;
   }
 }

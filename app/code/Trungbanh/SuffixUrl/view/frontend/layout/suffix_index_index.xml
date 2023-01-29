@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd" layout="1column">
+    <head>
+        <css src="Trungbanh_SuffixUrl::css/bootstrap.css" />
+        <script src="Trungbanh_SuffixUrl::js/bootstrap.bundle.js"/>
+    </head> 
+    <body>
+        <referenceContainer name="content">
+            <block class="Trungbanh\SuffixUrl\Block\Test" name="suffix_index_index" template="Trungbanh_SuffixUrl::test.phtml"/>
+        </referenceContainer>
+
+    <referenceBlock name="page.main.title" remove="true" />
+    <referenceBlock name="vendor.profile.top" remove="true" />
+    <referenceBlock name="vendor.profile.left" remove="true" />
+    </body> 
+</page>
